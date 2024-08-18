@@ -10,3 +10,9 @@ export const WORKER_EVENTS = {
 }
 
 export const WORKER_EVENT = {}
+
+
+export const DEFAULT_DATE_FORMAT = "DD MMM YYYY";
+export const DEFAULT_TIME_FORMAT = "hh:mm A";
+export const DEFAULT_24HR_TIME_FORMAT = "HH:mm";
+export const DEFAULT_12HR_TIME_FORMAT = "hh:mm a";

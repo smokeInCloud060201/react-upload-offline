@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {BrowserRouter} from "react-router-dom";
 
 async function enableMocking() {
     const {worker} = await import('./mocks/browser')
@@ -14,11 +15,12 @@ const root = ReactDOM.createRoot(
 );
 
 
-
 enableMocking().then(() => {
     root.render(
         <React.StrictMode>
-            <App/>
+            <BrowserRouter>
+                <App/>
+            </BrowserRouter>
         </React.StrictMode>
     );
 }).catch(err => console.log('errror', err));

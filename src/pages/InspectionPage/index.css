@@ -1,0 +1,40 @@
+.inspection-table-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #454F54;
+}
+
+.inspection-table__header {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.inspection-table-wrapper .table-content {
+
+}
+
+.inspection-table-wrapper .table-content .row-col {
+    width: 10%;
+    padding: 4px 12px 4px 0;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+

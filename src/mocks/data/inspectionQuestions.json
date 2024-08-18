@@ -1,0 +1,151 @@
+{
+  "data": {
+    "SP_REQUIREMENTS": [
+      {
+        "id": "1148880992123908121",
+        "content": "CCTV camera setup and functioning",
+        "inspection_category": "SP_REQUIREMENTS",
+        "question_order": 132,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908122",
+        "content": "Comply with \"No Smoking Rule\"",
+        "inspection_category": "SP_REQUIREMENTS",
+        "question_order": 133,
+        "is_minor": false
+      }
+    ],
+    "GENERAL_SAFETY": [
+      {
+        "id": "1148880992123908110",
+        "content": "Good housekeeping is maintained and work environment is adequately ventilated and illuminated",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 121,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908111",
+        "content": "Non-load bearing surfaces or platforms are secured with guardrails and labelled with ‘’Danger - Do not Step” warning signs",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 122,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908112",
+        "content": "No slips, trips and falls hazards such as:\\n- Potholes on the ground\\n- No uneven ground \\n- Staircase step inconsistency \\n- Ground protrusions \\n- No slippery floor",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 123,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908113",
+        "content": "No physical hazards:\\n- Overhead hazards (dangling ceiling boards, fixtures and other objects)\\n- Protrusions of structure and objects posing struck against hazards",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 124,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908114",
+        "content": "Worksite barricaded with warning or safety signs available and visible in the work area",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 125,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908115",
+        "content": "No water ponding or stagnant water found (mosquito breeding)",
+        "inspection_category": "GENERAL_SAFETY",
+        "question_order": 126,
+        "is_minor": false
+      }
+    ],
+    "MACHINERY": [
+      {
+        "id": "1148880992123908119",
+        "content": "Moving parts of machinery provided with protective guards or covers",
+        "inspection_category": "MACHINERY",
+        "question_order": 130,
+        "is_minor": false
+      }
+    ],
+    "WORKING_AT_HEIGHT": [
+      {
+        "id": "1148880992123908123",
+        "content": "Fall prevention measures such as guard rails, travel restraint or fall arrestors are used when there are risks of falling a distance of ≥ 2 metre",
+        "inspection_category": "WORKING_AT_HEIGHT",
+        "question_order": 134,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908124",
+        "content": "Scaffold complies with the following:\\n- Erected on stable ground\\n- Toeboards provided\\n- Guard rails provided\\n- Proper means of access (e.g. cat ladder)\\n- Safe for use tag prominently displayed\\n- Working platforms secured\\n- No missing working platform",
+        "inspection_category": "WORKING_AT_HEIGHT",
+        "question_order": 135,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908125",
+        "content": "Mobile elevated working platform (MEWP) operated by competent person and authorized person",
+        "inspection_category": "WORKING_AT_HEIGHT",
+        "question_order": 136,
+        "is_minor": false
+      }
+    ],
+    "LIFTING": [
+      {
+        "id": "1148880992123908116",
+        "content": "Lifting equipment with valid certificates and in good condition",
+        "inspection_category": "LIFTING",
+        "question_order": 127,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908117",
+        "content": "Lifting plan available and with competent lifting crew (lifting supervisor, rigger, signalmen)",
+        "inspection_category": "LIFTING",
+        "question_order": 128,
+        "is_minor": false
+      },
+      {
+        "id": "1148880992123908118",
+        "content": "Lifting operations measures are implemented (stable ground, outrigger fully extended, 3-3-3 pre-checks for lifting, etc)",
+        "inspection_category": "LIFTING",
+        "question_order": 129,
+        "is_minor": false
+      }
+    ],
+    "FIRE_SAFETY": [
+      {
+        "id": "1148880992123908108",
+        "content": "Area free from fire hazards:\\n- no storage of discarded combustible materials such as cardboard/documents\\n- no obstruction to fireman’s access and emergency fire exits\\n- fire fighting system and equipment are in good condition",
+        "inspection_category": "FIRE_SAFETY",
+        "question_order": 119,
+        "is_minor": false
+      }
+    ],
+    "FORKLIFT": [
+      {
+        "id": "1148880992123908109",
+        "content": "The forklift is parked appropriately when not in use:\\n- forks on the floor\\n- key removed from ignition\\n- not obstructing other services or activities / access",
+        "inspection_category": "FORKLIFT",
+        "question_order": 120,
+        "is_minor": false
+      }
+    ],
+    "MATERIAL_STORAGE": [
+      {
+        "id": "1148880992123908120",
+        "content": "Material Storage:\\n- Racks and pallets are in good condition and stable\\n- Materials stored at height are secured",
+        "inspection_category": "MATERIAL_STORAGE",
+        "question_order": 131,
+        "is_minor": false
+      }
+    ]
+  },
+  "metaData": null,
+  "status": {
+    "status": 200,
+    "message": "Success"
+  }
+}

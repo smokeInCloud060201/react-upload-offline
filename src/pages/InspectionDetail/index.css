@@ -1,0 +1,113 @@
+.inspection-detail__wrapper {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.card {
+    display: flex;
+    padding: 16px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    flex-direction: column;
+}
+
+
+.card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 16px 8px 0;
+}
+
+.card .card-header .left {
+    display: flex;
+}
+
+.card .card-header .left h2 {
+    font-size: 18px;
+}
+
+.card .card-header .card-applicable {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+.card .card-header .card-header__icon {
+    margin-right: 12px;
+}
+
+
+.card .card-header .card-applicable .checkbox {
+    height: 24px;
+    width: 24px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+.card .card-body {
+    margin-top: 20px;
+}
+
+.card .card-body ul {
+    list-style-type: none;
+}
+
+.inspection-detail__wrapper .detail-content li {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+    font-size: 14px;
+    height: 20px;
+    line-height: 21px;
+}
+
+.inspection-detail__wrapper .detail-content li span:first-child {
+    color: #818A91;
+    min-width: 180px;
+}
+
+.inspection-detail__wrapper .detail-content li span:last-child {
+    color: #454F54;
+}
+
+.card .card-body .question, .answer {
+    color: #454F54;
+    font-size: 14px;
+    margin-top: 32px;
+}
+
+.card .card-body .answer ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 32px;
+}
+
+
+.card .card-body .answer ul li {
+    display: flex;
+    flex-direction: row;
+    min-width: 20px;
+    margin-top: 8px;
+    gap: 8px;
+}
+
+.card .card-body .answer ul li input[type=radio] {
+    background-color: white;
+}
+
+.inspection-detail__wrapper .card .card-body .question-item .answer ul li input[type=radio] {
+    width: 20px;
+    height: 20px;
+}
+
+.inspection-detail__wrapper .card .card-body .question-item .answer ul li:has(> input:checked) {
+    accent-color: #00B0B2;
+    border: none;
+}
+
+
+

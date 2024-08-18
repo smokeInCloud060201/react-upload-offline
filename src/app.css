@@ -1,0 +1,18 @@
+.app-wrapper {
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.app-wrapper .header {
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.app-wrapper main {
+    margin-top: 20px;
+    padding: 16px 52px;
+    background-color: #f3f6f7;
+}

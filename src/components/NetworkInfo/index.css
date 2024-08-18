@@ -1,0 +1,49 @@
+
+.network-info-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 0;
+    z-index: 10000;
+    border-radius: 12px;
+    box-shadow: 10px 10px 8px 10px #888888;
+    background-color: #FFFFFF;
+}
+
+.network-info-wrapper .content {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.network-info-wrapper .row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.network-info-wrapper .row .active-icon {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 5px;
+    right: 30px;
+    border-radius: 50%;
+}
+
+.network-info-wrapper .row .online {
+    background-color: #4CAF50;
+}
+
+.network-info-wrapper .row .offline {
+    background-color: red;
+}

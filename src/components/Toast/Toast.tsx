@@ -10,8 +10,7 @@ interface ToastProps {
 
 export type ToastType = "ERROR" | "WARNING" | "SUCCESS"
 
-const Toast: React.FC<ToastProps> = ({onClose, message= "", type = "SUCCESS", duration = 4000}) => {
-    console.log(message, type)
+const Toast: React.FC<ToastProps> = ({onClose, message = "", type = "SUCCESS", duration = 4000}) => {
     useEffect(() => {
         const timer = setTimeout(() => {
             onClose();
@@ -36,8 +35,8 @@ const Toast: React.FC<ToastProps> = ({onClose, message= "", type = "SUCCESS", du
     }, [type]);
 
     return (
-         <div className='toast-wrapper'>
-            <div className={`toast-type ${getTypeToast}`} />
+        <div className='toast-wrapper'>
+            <div className={`toast-type ${getTypeToast}`}/>
             <div>{message}</div>
         </div>
     )

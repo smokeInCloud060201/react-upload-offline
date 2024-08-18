@@ -1,29 +1,16 @@
 import {useEffect, useState} from "react";
-
-interface NavigatorConnection {
-    downlink: number;
-    effectiveType: 'slow-2g' | '2g' | '3g' | '4g';
-    rtt: number;
-    saveData: boolean;
-
-    addEventListener(type: 'change', listener: () => void): void;
-
-    removeEventListener(type: 'change', listener: () => void): void;
-}
-
-interface Navigator {
-    connection?: NavigatorConnection;
-}
-
-type NetworkStatus = {
-    isOnline: boolean;
-    speed: 'fast' | 'slow' | 'unknown';
-};
+import {
+    NetworkStatus,
+    Navigator,
+    SpeedConnectionType,
+    NavigatorConnection
+} from "../interface";
 
 const useInternetConnection = (): NetworkStatus => {
     const [status, setStatus] = useState<NetworkStatus>({
         isOnline: navigator.onLine,
         speed: 'unknown',
+        detail: {rtt: 0, effectiveType: "4g", downlink: 0, saveData: false}
     });
 
     const updateOnlineStatus = () => {
@@ -33,15 +20,19 @@ const useInternetConnection = (): NetworkStatus => {
     const updateNetworkSpeed = () => {
         const connection = (navigator as Navigator).connection;
         if (connection) {
-            const {downlink, effectiveType} = connection;
-            let speed: 'fast' | 'slow' | 'unknown' = 'unknown';
-            if (downlink >= 2 || effectiveType === '4g') {
-                speed = 'fast';
-            } else if (downlink < 2 || effectiveType === '3g' || effectiveType === '2g' || effectiveType === 'slow-2g') {
+            const {downlink, effectiveType, rtt, saveData} = connection;
+            let speed: SpeedConnectionType = "fast";
+            if (downlink < 2 || effectiveType === '3g' || effectiveType === '2g' || effectiveType === 'slow-2g') {
                 speed = 'slow';
             }
+            const detail: NavigatorConnection = {
+                rtt: rtt,
+                effectiveType: effectiveType,
+                saveData: saveData,
+                downlink: downlink
+            }
 
-            setStatus((prev) => ({...prev, speed}));
+            setStatus((prev) => ({...prev, speed: speed, detail: detail}));
         }
     };
 
@@ -51,7 +42,7 @@ const useInternetConnection = (): NetworkStatus => {
 
         const connection = (navigator as Navigator).connection;
         if (connection) {
-            updateNetworkSpeed(); // Initial update
+            updateNetworkSpeed();
             connection.addEventListener('change', updateNetworkSpeed);
         }
 
